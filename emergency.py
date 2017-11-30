@@ -2,7 +2,6 @@ import pigpio
 import time
 
 
-
 RED_PIN   = 17
 WHITE_PIN = 22
 BLUE_PIN  = 24
