@@ -68,13 +68,13 @@ def main():
 				message = mail.body
 				data = {"verification":verification,"dispatch":message}
 				r = requests.post(url = url, data = data)
-				light()
+				# light()
 				for x in range(0, 2):
 					os.system('aplay ~/TL/ToneLights/Station51.wav')
 
 					time.sleep(5)
 				mail.read()
-				dark()
+				# dark()
 			g.logout()
 			if(len(emails) > 0):
 				print str(datetime.now()) + " - Waiting for calls..."
